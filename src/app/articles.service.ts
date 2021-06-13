@@ -16,6 +16,10 @@ export class ArticlesService {
 
   getArticles(): Observable<Article[]> {
     return this.http.get<Article[]>(this.url)
+    }
 
+    getArticleById(id: number): Observable<Article> {
+      const url = `${this.url}/${id}`;
+      return this.http.get<Article>(url);
     }
 }
