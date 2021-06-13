@@ -1,10 +1,29 @@
-<div class="container">
+<nav class="navbar">
+  <div class="mr-auto logo-container">
+      <a class="logo-link" routerLink="/dashboard">
+          <img class="logotype logotype__front" src="assets/images/logo-nav.png" alt="INTERFAZ" style="border-radius: 50%;">
+  <img class="logotype logotype__back" src="assets/images/logo-nav.png" alt="INTERFAZ" style="border-radius: 50%;">
+</a>
+  </div>
+
+<div class="select js-down">
+  <span class="placeholder">Selecciona una categoría</span>
+  <ul class="filters">
+      <li class="filters__item"><h6 class="title title--overhead filters-title">Categorías</h6></li>
+    <li class="filters__item active" data-filter="*"><a class="filters__link" href="#filter">Todos</a></li>
+    <li class="filters__item" data-filter=".category-articulos"><a class="filters__link" href="#filter">Entrevistas</a></li>
+    <li class="filters__item" data-filter=".category-entrevistas"><a class="filters__link" href="#filter">Reflexiones</a></li>
+    <li class="filters__item" data-filter=".category-eventos"><a class="filters__link" href="#filter">Reseñas</a></li>
+  </ul>
+  <input type="hidden" name="changemetoo"/>
+</div>
+</nav>
+
+<div class="container parallax-container">
     <div class="flex-grid fitGrid js-sort">
-      <div class="gutter-sizer"></div>
       <article class="item-news triger-hl category-entrevistas" *ngFor="let article of articles">
       <figure class="item-news__media js-block">
-        <img class="item-news__image lazyload" src="{{article.thumbnail}}" alt="{{article.title}}">
-
+        <img class="item-news__image lazyload" routerLink="/article/{{article.id}}" src="{{article.thumbnail}}" alt="{{article.title}}">
       </figure>
       <div class="item-news__header js-block">
         <div class="date">{{article.type}} / {{article.date}}</div>
@@ -12,7 +31,6 @@
           <div class="date mb--2 js-lines">por {{article.author}}
           </div>
         </div>
-
     </article>
   </div>
 </div>

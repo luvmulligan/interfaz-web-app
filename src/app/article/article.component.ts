@@ -20,11 +20,7 @@ article: Article | undefined;
   ngOnInit(): void {
     this.getArticle();
   }
-  // getArticles(): void {
-  //   this.articlesService.getArticles()
-  //   .subscribe(articles => this.articles = articles);
-  //   console.log(this.articles)
-  // }
+
   getArticle(): void {
     const id = parseInt(this.route.snapshot.paramMap.get('id')!, 10);
     this.articlesService.getArticleById(id)

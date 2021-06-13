@@ -8,6 +8,9 @@ export interface Article {
   artistLink: string;
   heroImgUrl: string;
   thumbnail: string;
+  interview?: boolean;
+  review?: boolean;
+  analysis?: boolean;
   galleryImages: [
     {id: number;
       url: string;

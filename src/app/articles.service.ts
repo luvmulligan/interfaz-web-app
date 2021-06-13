@@ -11,6 +11,9 @@ export class ArticlesService {
   public url: string =  'http://localhost:3000/articles';
 
   articles: Article[] = [];
+  interviews: Article[]= [];
+  reviews: Article[]=[];
+  analysis: Article[]=[];
 
   constructor( private http: HttpClient) { }
 
@@ -22,4 +25,11 @@ export class ArticlesService {
       const url = `${this.url}/${id}`;
       return this.http.get<Article>(url);
     }
+
+    getByType(type: string): Observable<Article>{
+      const url = `${this.url}/${type}`;
+      return this.http.get<Article>(this.url);
+    }
+
+
 }
