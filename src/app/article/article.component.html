@@ -23,30 +23,30 @@
       <cite>Andrew Grove</cite>
     </blockquote> -->
 
-  <div class="col-12 col-lg-9 flex-gallery-container">
-      <!-- gallery -->
-      <div class="flex-gallery">
-          <figure class="flex-gallery__item">
-            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
-          </figure>
-                <figure class="flex-gallery__item">
-            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
-          </figure>
+
+
+			<div class="col-12 col-lg-9 flex-gallery-container">
+        <!-- gallery -->
+        <div class="flex-gallery">
+            <figure class="flex-gallery__item">
+              <img class="cover zoom-cursor lazyload" src="https://mediointerfaz.netlify.app/assets/img/tramo/1.Tramo.jpg" data-zoomable alt="" />
+            </figure>
+                  <figure class="flex-gallery__item">
+              <img class="cover zoom-cursor lazyload" src="https://mediointerfaz.netlify.app/assets/img/tramo/4.Tramo.jpg" data-zoomable alt="" />
+            </figure>
+      </div>
+        <div class="flex-gallery">
+            <figure class="flex-gallery__item">
+              <img class="cover zoom-cursor lazyload" src="https://mediointerfaz.netlify.app/assets/img/tramo/3.Tramo.jpg" data-zoomable alt="" />
+            </figure>
+                  <figure class="flex-gallery__item">
+              <img class="cover zoom-cursor lazyload" src="https://mediointerfaz.netlify.app/assets/img/tramo/2.Tramo.jpg" data-zoomable alt="" />
+            </figure>
+
+      </div>
+      <!-- /gallery -->
     </div>
-      <div class="flex-gallery">
-          <figure class="flex-gallery__item">
-            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
-          </figure>
-                <figure class="flex-gallery__item">
-            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
-          </figure>
-      <figure class="flex-gallery__item">
-            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
-        <figcaption class="image-caption image-caption--three">Autoría de <a href="{{article.artistLink}}">{{article.artist}}</a></figcaption>
-          </figure>
-    </div>
-    <!-- /gallery -->
-  </div>
+
 
     <div class="col-12" *ngFor="let item of article.content.items; let index = index">
       <h2 class="title title--h4 js-lines" *ngIf="item.qId === 0">{{item.content}}</h2>
