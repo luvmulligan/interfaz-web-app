@@ -1,6 +1,6 @@
 /* ------------------------------------------------
  Author: ArtStyles (Art)
- 
+
  Template Name: ARTEM.
  version: 1.5.9
 ------------------------------------------------ */
@@ -58,7 +58,7 @@
    - Cursor
    - Jarallax
    - Medium Zoom
-    
+
 ------------------------------------------------ */
 @import url(vendors/bootstrap.min.css);
 @import url(vendors/swiper.min.css);
@@ -1255,8 +1255,8 @@ button:focus {
 
 .logotype {
   display: inline-block;
-  height: 18px;
-  max-height: 48px;
+  height: 90px;
+  max-height: 90px;
   transition: transform 0.4s cubic-bezier(0.72, 0.16, 0.345, 0.875);
 }
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -4143,6 +4143,7 @@ li:nth-child(4) .menu-list__item span {
     display: block;
     overflow: hidden;
     position: relative;
+    color: #fafafa;
   }
   .filters__link::after {
     content: "";

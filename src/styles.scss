@@ -4129,7 +4129,7 @@ li:nth-child(4) .menu-list__item span {
 @media only screen and (min-width: 769px) {
   .filters__item.active .filters__link::before {
     content: "";
-    background-color: #110f10;
+    background-color: $white-color;
     height: 2px;
     width: 100%;
     margin-top: -0.1rem;
@@ -4172,6 +4172,108 @@ li:nth-child(4) .menu-list__item span {
 }
 .select .placeholder {
   display: none;
+}
+@media only screen and (min-width: 769px) {
+  .filters {
+    &__item {
+      &.active {
+        .filters__link {
+          &::before {
+            background-color: $white-color;
+          }
+        }
+      }
+    }
+
+    &__link {
+      &::after {
+        background-color: $white-color;
+      }
+
+      &.active {
+        &::before {
+          background-color: $white-color;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .select {
+    color: $black-color;
+
+    .placeholder {
+      background-color: $white-color;
+
+      &:hover {
+        background: rgba($white-color, 0.05);
+      }
+    }
+
+    ul {
+      background: $black-color;
+      box-shadow: 0 10px 60px rgba($white-color, 0.1);
+
+      li {
+        color: $white-color;
+
+        &:hover {
+          background: rgba($white-color, 0.05);
+        }
+      }
+    }
+  }
+}
+
+.item-news {
+  .date {
+    &::before {
+      background-color: rgba($white-color, 0.5);
+    }
+  }
+}
+
+// Three grid
+.date {
+  color: rgba($white-color, 0.5);
+}
+
+.hover-line {
+  background-image: linear-gradient(
+    to right,
+    $white-color 0%,
+    $white-color 100%
+  );
+}
+
+.image-caption {
+  color: rgba($white-color, 0.5);
+}
+
+// Share
+.share-post {
+  &::before {
+    background-color: $white-color;
+  }
+}
+
+/* -----------------------------------------------------------------
+    - Footer
+----------------------------------------------------------------- */
+
+.footer {
+  &::before {
+    background-color: $black-color;
+  }
+
+  &__left {
+    color: $white-color;
+
+    @media only screen and (max-width: $medium) {
+      background-color: $black-color;
+    }
+  }
 }
 
 @media only screen and (max-width: 768px) {
