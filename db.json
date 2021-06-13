@@ -9,6 +9,25 @@
       "artist": "Tramo",
       "artistLink": "http://instagram.com/tramo",
       "heroImgUrl":"https://mediointerfaz.netlify.app/assets/img/tramo/Portada.jpg",
+      "thumbnail": "https://i.ibb.co/n7865Pq/2-tramo.jpg",
+      "galleryImages":[{
+        "id": 0,
+        "url":"https://mediointerfaz.netlify.app/assets/img/tramo/1.Tramo.jpg",
+        "altText":"Tramo 1"
+      },
+        {
+          "id": 1,
+          "url":"https://mediointerfaz.netlify.app/assets/img/tramo/2.Tramo.jpg",
+          "altText":"Tramo 2"
+        },
+        {"id": 2,
+          "url":"https://mediointerfaz.netlify.app/assets/img/tramo/3.Tramo.jpg",
+          "altText":"Tramo 3"
+        },
+        {"id": 3,
+          "url":"https://mediointerfaz.netlify.app/assets/img/tramo/4.Tramo.jpg",
+          "altText":"Tramo 4"
+          }],
       "content":
         {"heading":
           "El estudio,Tramo, está enfocado en la exploración y la creación bajo la técnica de origami aplicado a distintas materialidades y dimensiones, con el fin de generar objetos tridimensionales a partir de láminas bidimensionales.",
@@ -31,6 +50,42 @@
         {"qId": 14, "content": "¡Atravesaron un enorme camino! Les agradecemos por su tiempo.  "}
       ]
     }
+},
+{
+  "id": 2,
+  "title": "Jazmin Rivero: “Nos rodean imágenes con calidades extremas que superan ampliamente al ojo humano.” ",
+  "date": "10 Oct 2018",
+  "author": "Camila Soria",
+  "type": "entrevista",
+  "artist": "Jazmin Rivero",
+  "artistLink": "http://instagram.com/tramo",
+  "heroImgUrl":"https://mediointerfaz.netlify.app/assets/img/jazmin-rivero/Portada-Jaz.jpg",
+  "thumbnail": "https://i.ibb.co/XWNQF9j/1-jaz-1.jpg",
+  "content":
+    {"heading":
+      "",
+     "intro": "Jazmín Rivero nació en enero del 91. Está terminando la carrera de curaduría de la UNA y es fotógrafa autodidacta.Empezó con digital, pero cuando se metió en el mundo del analógico, no pudo salir. Si bien disfruta mucho de sacar fotos, la parte de revelarlas es la que más le divierte. Nunca se sabe del todo cómo va a salir, y no tener el control absoluto de la situación, le parece algo increíble. ",
+     "items": [
+    {"qId": 0, "content": "¿Cómo sentís que conectaste con la foto analógica? ¿Qué es lo que más te entretiene del revelado, además de la falta de control de la situación?"},
+    {"qId": 1, "content": "La primera cámara que tuve fue una descartable, me parecía increíble ese concepto de sacar un par de fotos y que la cámara no sirva más. A partir de ahí, todo fue cambiando. Cuando mandé a revelar por primera vez ya estaba pensando en cómo hacer para revelar los rollos yo misma. Siempre me gustó aprender a hacer cosas con las manos y empecé a soñar con armarme un laboratorio en el baño. Lo analógico tiene esa parte artesanal que lo digital no tiene, ese juego de prueba y error constante que me parecen algo insuperable. "},
+    {"qId": 2, "content": "¿Qué libros de fotografía te inspiraron para poder montar el laboratorio?"},
+    {"qId": 3, "content": "Los clásicos, La fotografía paso a paso de Michael Langford y Fotografía Experimental de Editorial Blume."},
+    {"qId": 4, "content": "Con respecto a las ampliaciones ¿Realizas únicamente ampliaciones blanco y negro o también te expandiste a las color? "},
+    {"qId": 5, "content": "Por ahora solo blanco y negro. El proceso de color es muy caro, como se dejó de hacer manualmente, todos los insumos se venden para minilab de manera industrial. De igual manera, es mi pendiente."},
+    {"qId": 6, "content": "Vimos que en tu cuenta personal de Instagram subis muchas fotografías estenopeikas, ¿elegís más ese mundo que la fotografía ‘prolija’?"},
+    {"qId": 7, "content": "Si, nos rodean imágenes con calidades extremas que superan ampliamente al ojo humano. Pienso que la fotografía desde la visión y lamentablemente me toca vivir muy de cerca una enfermedad visual, todo mi trabajo se trata de eso, pensar y reflexionar acerca de los trastornos visuales. Poder encontrar la belleza en la distorsión, a la vez que le saca un poco de peso, es un consuelo. Me interesa mostrar que no solo lo perfecto es lindo y que todos vemos de manera distinta las cosas."},
+    {"qId": 8, "content": "¿Cómo relacionas tu trabajo con el que estás armando de realizar imágenes con braille?"},
+    {"qId": 9, "content": "Me encanta Jorge Luis Borges, y una gran parte de su obra se la dedica a la ceguera.,poder leer con las manos me pareció algo hermoso. Aprendí a escribir braille para poder incorporarlo a copias lumen print donde se ven únicamente siluetas de flores y contienen fragmentos de poemas de Borges. Es el proyecto en el que estoy trabajando actualmente, me parece interesante la experiencia de poder tocar las copias, es otro recurso para poder acercarse a lo visual."},
+    {"qId": 10, "content": "Comentanos un poco sobre el proceso que empleas para hacer las copias y el grabado de las mismas. "},
+    {"qId": 11, "content": "Venía muy entusiasmada con los procesos alternativos. En el 2018, hice un taller que me abrió las puertas al proceso Van Dyke y al cianotipo. Ese mismo año, viajé me había armado todo para hacer copias Van Dyke pero me olvidé los químicos. Por suerte tenía hojas fotosensibles para hacer estenopeikas, y me propuse probar a lumen print. El proceso es súper sencillo, como el papel es sensible a la luz cualquier objeto que se ponga encima, hace sombra y al exponer el papel te queda una imagen donde se observa el objeto. Una vez expuesto, se fija la imagen en el papel con un hiposulfito y quedan unos resultados hermosos. Aproveché el viaje, recolecté y copié todo tipo de flores que me encontré en el camino."},
+    {"qId": 12, "content": "¿Pensaste algún título para el mismo?"},
+    {"qId": 13, "content": "Lo estuve exponiendo con el nombre Rastro, pero con los brailles aún no tiene nombre. "},
+    {"qId": 14, "content": "¿Sentís que este proyecto tiene alguna relación con el laboratorio que fuiste montando poco a poco?"},
+    {"qId": 15, "content": "Se relaciona porque las copias también hay que fijarlas entonces necesitan del proceso químico. La parte de laboratorio en este caso también es mí preferida, las copias cambian de color al contacto con el fijador, y es súper mágico."},
+    {"qId": 16, "content": "¿Tenes alguna experiencia divertida para contar sobre tener un laboratorio?"},
+    {"qId": 16, "content": "Si, un montón pero la más divertida fue el día que probé Van Dyke por primera vez, estuve encerrada en el laboratorio que tenía montado en Panal, y cuando salí, se expusieron mis manos al sol y me quedaron todas marrones, tenía una sensación de mariposas en el estómago, supe, en ese momento que el proceso había funcionado. Aparte, fue divertido porque me había enamorado de una especie de leyenda que dice que no tenes que enamorarte del anaranjado intermedio que se da en ese proceso porque va a desaparecer rápidamente. Pero, copié imágenes y las expuse al sol para ver cuánto tiempo tardaban en desaparecer y quedaron cosas hermosas."}
+  ]
+}
 }
   ]
 }

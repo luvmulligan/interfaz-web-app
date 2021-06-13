@@ -7,6 +7,12 @@ export interface Article {
   artist: string;
   artistLink: string;
   heroImgUrl: string;
+  thumbnail: string;
+  galleryImages: [
+    {id: number;
+      url: string;
+    altText: string}
+  ];
   content: {
     heading: string;
     intro: string;

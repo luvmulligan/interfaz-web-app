@@ -1,7 +1,16 @@
-<div *ngFor="let article of articles">
-
-
-<app-article></app-article>
+<div class="container">
+    <div class="flex-grid fitGrid js-sort">
+      <div class="gutter-sizer"></div>
+      <article class="item-news triger-hl category-entrevistas" *ngFor="let article of articles">
+      <figure class="item-news__media js-block">
+        <img class="item-news__image lazyload" src="{{article.thumbnail}}" alt="Jazmin Rivero Portada">
+      </figure>
+      <div class="item-news__header js-block">
+        <div class="date">{{article.type}} / {{article.date}}</div>
+        <h2 class="title title--h5 item-news__title"><a href="jazmin-rivero.html"><span class="hover-line">{{article.title}}</span></a></h2>
+          <div class="date mb--2 js-lines">por {{article.author}}
+          </div>
+        </div>
+    </article>
+  </div>
 </div>
-
-
