@@ -10,6 +10,8 @@ import { ArticlesService } from '../articles.service';
 })
 export class DashboardComponent implements OnInit {
   articles: Article[]=[];
+  activeFilter: boolean = false;
+  filterType: any = ['entrevistas', 'analisis', 'reflexiones']
 
 
   constructor(private articlesService: ArticlesService) { }
@@ -22,4 +24,16 @@ export class DashboardComponent implements OnInit {
     console.log(this.articles)
   }
 
+  filterByIntwerviews(): void{
+  this.activeFilter = true;
+  this.filterType = ['entrevistas']
+  }
+
+  filterByAnalysis(): void{
+    this.activeFilter = true;
+  this.filterType = ['analisis']
+}
+removeFilter(): void{
+  this.activeFilter = false;
+}
 }
