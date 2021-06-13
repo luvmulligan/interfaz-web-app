@@ -1,0 +1,75 @@
+<div class="container" *ngFor="let article of articles">
+  <div class="row justify-content-center">
+    <div class="col-12">
+    <header class="header-page header-page--half">
+                <h6 class="title title--overhead title--tail">{{article.type}} / {{article.date}}</h6>
+            <h1 class="title title--display-1 weight--300 js-lines">{{article.title}}</h1>
+        </header>
+  </div>
+
+        <div class="col-12 col-lg-9">
+    <figure class="single-news__media reveal">
+            <img class="single-news__image cover lazyload" src="{{article.heroImgUrl}}" alt="News">
+          </figure>
+
+      <div class="date mb--2 js-lines">por {{article.author}}</div>
+    </div>
+
+  <div class="col-12 col-lg-9">
+      <h2 class="title title--h4 js-lines">{{article.content.heading}}</h2>
+    <p class="paragraph">{{article.content.intro}}</p>
+      <!-- <blockquote class="block-quote">
+      <p>The goal of a designer is to listen, observe, understand, sympathize, empathize, synthesize, and glean insights that enable him or her to make the invisible visible.</p>
+      <cite>Andrew Grove</cite>
+    </blockquote> -->
+
+  <div class="col-12 col-lg-9 flex-gallery-container">
+      <!-- gallery -->
+      <div class="flex-gallery">
+          <figure class="flex-gallery__item">
+            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
+          </figure>
+                <figure class="flex-gallery__item">
+            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
+          </figure>
+    </div>
+      <div class="flex-gallery">
+          <figure class="flex-gallery__item">
+            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
+          </figure>
+                <figure class="flex-gallery__item">
+            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
+          </figure>
+      <figure class="flex-gallery__item">
+            <img class="cover zoom-cursor lazyload" src="assets/img/image_slider_2.jpg" data-zoomable alt="" />
+        <figcaption class="image-caption image-caption--three">Autoría de <a href="{{article.artistLink}}">{{article.artist}}</a></figcaption>
+          </figure>
+    </div>
+    <!-- /gallery -->
+  </div>
+
+    <div class="col-12" *ngFor="let item of article.content.items; let index = index">
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 0">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 1">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 2">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 3">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 4">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 5">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 6">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 7">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 8">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 9">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 10">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 11">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 12">{{item.content}}</h2>
+      <p class="paragraph" *ngIf="item.qId === 13">{{item.content}}</p>
+      <h2 class="title title--h4 js-lines" *ngIf="item.qId === 14">{{item.content}}</h2>
+
+
+      </div>
+  </div>
+
+</div>
+
+
+</div>
