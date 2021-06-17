@@ -1,3 +1,6 @@
 nav {
   background: #110f10;
 }
+.container {
+  max-width: fit-content;
+}

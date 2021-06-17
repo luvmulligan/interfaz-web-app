@@ -4820,6 +4820,10 @@ li:nth-child(4) .menu-list__item span {
 .parallax-container {
   overflow: hidden;
 }
+.container {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+}
 
 .error-page {
   height: 100vh;
@@ -5104,5 +5108,3 @@ li:nth-child(4) .menu-list__item span {
 .medium-zoom-image {
   z-index: 9999;
 }
-
-/*# sourceMappingURL=style.css.map */

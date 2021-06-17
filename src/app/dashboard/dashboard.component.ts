@@ -29,18 +29,18 @@ export class DashboardComponent implements OnInit {
   showInterviews: boolean = false;
   showAnalysis: boolean = false;
   showReviews: boolean = false;
+  Interviews = [];
+  Analysis = [];
+  Reviews = [];
 
 
   constructor(private articlesService: ArticlesService,
     private route: ActivatedRoute) { }
   ngOnInit(): void {
     this.getArticles();
+    this.getInterviews();
   }
-  filterArticlesByType(type: string) {
-    this.filteredItems = this.articles.filter((article: Article) => {
-      return article.type.includes('entrevista');
-    })
-  }
+
 
   reset() {
     this.filteredItems = [...this.articles];
@@ -49,12 +49,12 @@ export class DashboardComponent implements OnInit {
   getArticles(): void {
     this.articlesService.getArticles()
     .subscribe(articles => this.articles = articles);
+    console.log(this.articles)
+
   }
 
   getInterviews(): void{
-    const type = this.route.snapshot.paramMap.get('entrevista');
-    this.articlesService.getByType('entrevistas')
-    .subscribe(interview => this.interviews = interview);
+  Object.keys(this.articles);
 
   }
 
@@ -63,13 +63,32 @@ export class DashboardComponent implements OnInit {
       return article.type === 'reflexion';
 
   });
-
   }
+
   getReviews(): void{
     this.articles.filter(function(article) {
       return article.type === 'reseña';
   });
-
   }
 
-}
+  filterByType() {
+    const Articles = Object.keys(this.articles);
+    let Interviews = [];
+    let Analysis = [];
+    let Reviews = [];
+  //   if (this.article.type === 'entrevista') {
+  //     Interviews.push(this.article)
+  //     console.log(Interviews);
+
+  //   }
+  //   else if (this.article.type === 'reflexion'){
+  //     Analysis.push(this.article)
+  //     console.log(Analysis)
+  //   }
+  //   else if(this.article.type === 'reseña'){
+  //     Reviews.push(this.article)
+  //     console.log(Reviews)
+  //   }
+  // }
+
+}}
